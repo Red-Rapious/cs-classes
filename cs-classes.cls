@@ -45,6 +45,8 @@
     style=numeric
 ]{biblatex}
 
+\usepackage{minted}
+
 \usepackage{hyperref}
 
 \if@toc
