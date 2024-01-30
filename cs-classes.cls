@@ -50,9 +50,9 @@
 \usepackage{hyperref}
 
 \if@toc
-\AfterBeginDocument{\maketitle\tableofcontents}
+\AfterEndPreamble{\maketitle\tableofcontents}
 \else
-\AfterBeginDocument{\maketitle}
+\AfterEndPreamble{\maketitle}
 \fi
 
 \usepackage{titling}
