@@ -46,6 +46,7 @@
 ]{biblatex}
 
 \usepackage{minted}
+\usepackage{graphicx}
 
 \usepackage{hyperref}
 
