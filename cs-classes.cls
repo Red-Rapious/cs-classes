@@ -47,6 +47,8 @@
 
 \usepackage{minted}
 \usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{patterns}
 
 \usepackage{hyperref}
 
