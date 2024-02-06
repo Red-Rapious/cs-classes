@@ -62,6 +62,8 @@
 \setlength{\droptitle}{-5ex}
 \pretitle{\begin{center}\LARGE\bfseries}
 
+\numberwithin{equation}{subsection}
+
 % Changed classical symbols
 \renewcommand{\phi}{\varphi}
 \renewcommand{\epsilon}{\varepsilon}
