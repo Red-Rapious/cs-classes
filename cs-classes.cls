@@ -76,7 +76,7 @@
 \newtheorem*{theoreme}{Théorème}
 \newtheorem*{corollary}{Corollaire}
 \newtheorem*{propriete}{Propriété}
-\newtheorem*{example}{Example}
+\newtheorem*{exemple}{Exemple}
 \newtheorem*{remarque}{Remarque}
 \theoremstyle{definition}
 \newtheorem*{definition}{Définition}
