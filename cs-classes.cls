@@ -50,6 +50,7 @@
 \usepackage{graphicx}
 \usepackage{tikz}
 \usetikzlibrary{patterns}
+\usepackage{xurl}
 
 \usepackage{hyperref}
 
