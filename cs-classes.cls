@@ -36,6 +36,7 @@
 \usepackage{mathrsfs}
 \usepackage{enumitem}  
 \usepackage{calc}
+\usepackage{dsfont}
 
 \usepackage{mathtools}
 \usepackage{wrapfig}
@@ -97,6 +98,8 @@
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\C}{\mathbb{C}}
 \newcommand{\A}{\mathcal{A}}
+\newcommand{\E}{\mathbb{E}}
+\renewcommand{\P}{\mathbb{P}}
 
 \DeclareMathOperator*{\argmin}{argmin}
 \DeclareMathOperator*{\argmax}{argmax}
