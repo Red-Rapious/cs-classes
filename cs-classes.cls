@@ -37,6 +37,7 @@
 \usepackage{enumitem}  
 \usepackage{calc}
 \usepackage{dsfont}
+\usepackage{stmaryrd}
 
 \usepackage{mathtools}
 \usepackage{wrapfig}
@@ -101,6 +102,7 @@
 \newcommand{\A}{\mathcal{A}}
 \newcommand{\E}{\mathbb{E}}
 \renewcommand{\P}{\mathbb{P}}
+\renewcommand{\S}{\mathcal{S}}
 
 \DeclareMathOperator*{\argmin}{argmin}
 \DeclareMathOperator*{\argmax}{argmax}
