@@ -101,6 +101,7 @@
 \newcommand{\C}{\mathbb{C}}
 \newcommand{\A}{\mathcal{A}}
 \newcommand{\E}{\mathbb{E}}
+\renewcommand{\L}{\mathcal{L}}
 \renewcommand{\P}{\mathbb{P}}
 \renewcommand{\S}{\mathcal{S}}
 
