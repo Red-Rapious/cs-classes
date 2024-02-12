@@ -77,6 +77,7 @@
 % Theorems
 \if@french
 \newtheorem*{theoreme}{Théorème}
+\newtheorem*{lemme}{Lemme}
 \newtheorem*{corollary}{Corollaire}
 \newtheorem*{propriete}{Propriété}
 \newtheorem*{exemple}{Exemple}
@@ -85,6 +86,7 @@
 \newtheorem*{definition}{Définition}
 \else
 \newtheorem*{theorem}{Theorem}
+\newtheorem*{lemma}{Lemma}
 \newtheorem*{corollary}{Corollary}
 \newtheorem*{property}{Property}
 \newtheorem*{example}{Example}
