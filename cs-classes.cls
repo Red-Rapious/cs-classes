@@ -52,6 +52,7 @@
 \usepackage{tikz}
 \usetikzlibrary{patterns}
 \usepackage{xurl}
+\usepackage{dirtytalk}
 
 \usepackage{hyperref}
 
