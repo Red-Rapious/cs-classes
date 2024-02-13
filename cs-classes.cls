@@ -50,7 +50,7 @@
 \usepackage{minted}
 \usepackage{graphicx}
 \usepackage{tikz}
-\usetikzlibrary{patterns}
+\usetikzlibrary{patterns, decorations.pathreplacing, bending, angles,quotes}
 \usepackage{xurl}
 \usepackage{dirtytalk}
 
