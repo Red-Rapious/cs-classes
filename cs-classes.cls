@@ -94,6 +94,7 @@
 \newtheorem*{remark}{Remark}
 \theoremstyle{definition}
 \newtheorem*{definition}{Definition}
+\newtheorem{exercise}{Exercise}
 \fi
 
 % Usefull new commands
@@ -107,6 +108,7 @@
 \renewcommand{\L}{\mathcal{L}}
 \renewcommand{\P}{\mathbb{P}}
 \renewcommand{\S}{\mathcal{S}}
+\newcommand{\X}{\mathcal{X}}
 
 \DeclareMathOperator*{\argmin}{argmin}
 \DeclareMathOperator*{\argmax}{argmax}
