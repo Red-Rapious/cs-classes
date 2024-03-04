@@ -69,7 +69,9 @@
 \numberwithin{equation}{subsection}
 
 % Changed classical symbols
-\renewcommand{\phi}{\varphi}
+\let\temp\phi
+\let\phi\varphi
+\let\varphi\temp
 \renewcommand{\epsilon}{\varepsilon}
 \renewcommand{\emptyset}{\varnothing}
 \renewcommand{\leq}{\leqslant}
@@ -78,18 +80,18 @@
 % Theorems
 \if@french
 \newtheorem*{theoreme}{Théorème}
-\newtheorem*{lemme}{Lemme}
+\newtheorem{lemme}{Lemme}
 \newtheorem*{corollary}{Corollaire}
-\newtheorem*{propriete}{Propriété}
+\newtheorem{propriete}{Propriété}
 \newtheorem*{exemple}{Exemple}
 \newtheorem*{remarque}{Remarque}
 \theoremstyle{definition}
 \newtheorem*{definition}{Définition}
 \else
 \newtheorem*{theorem}{Theorem}
-\newtheorem*{lemma}{Lemma}
+\newtheorem{lemma}{Lemma}
 \newtheorem*{corollary}{Corollary}
-\newtheorem*{property}{Property}
+\newtheorem{property}{Property}
 \newtheorem*{example}{Example}
 \newtheorem*{remark}{Remark}
 \theoremstyle{definition}
