@@ -97,6 +97,8 @@
 \theoremstyle{definition}
 \newtheorem*{definition}{Definition}
 \newtheorem{exercise}{Exercise}
+
+\setlist[itemize]{noitemsep}
 \fi
 
 % Usefull new commands
@@ -114,3 +116,8 @@
 
 \DeclareMathOperator*{\argmin}{argmin}
 \DeclareMathOperator*{\argmax}{argmax}
+
+% Custom commands
+%\newcommand*{\set}[2]{\left{\,#1\,\middle|\,#2\,\right}}
+\newcommand*{\set}[2]{\left\{\,#1 \: \middle| \: #2\,\right\}}
+\newcommand*{\trace}[1]{\langle #1 \rangle}
