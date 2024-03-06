@@ -113,6 +113,7 @@
 \renewcommand{\P}{\mathbb{P}}
 \renewcommand{\S}{\mathcal{S}}
 \newcommand{\X}{\mathcal{X}}
+\newcommand{\I}{\mathbb{I}}
 
 \DeclareMathOperator*{\argmin}{argmin}
 \DeclareMathOperator*{\argmax}{argmax}
