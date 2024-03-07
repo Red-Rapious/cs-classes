@@ -125,3 +125,4 @@
 \newcommand*{\set}[2]{\left\{\,#1 \: \middle| \: #2\,\right\}}
 \newcommand*{\trace}[1]{\langle #1 \rangle}
 \newcommand*{\sem}[1]{\llbracket #1 \rrbracket}
+\newcommand*{\roundsem}[1]{\llparenthesis #1 \rrparenthesis}
