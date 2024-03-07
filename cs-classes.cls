@@ -21,7 +21,7 @@
 \usepackage[a4paper,margin=2cm]{geometry}
 
 \usepackage{cmap}
-\usepackage[T1]{fontenc}
+\usepackage[T1]{fontenc} % for French
 \usepackage[utf8]{inputenc}
 \usepackage{csquotes}
 
@@ -36,7 +36,7 @@
 \usepackage{mathrsfs}
 \usepackage{enumitem}  
 \usepackage{calc}
-\usepackage{dsfont}
+\usepackage{dsfont} % mostly for \mathds{1}
 \usepackage{stmaryrd}
 
 \usepackage{mathtools}
@@ -52,7 +52,7 @@
 \usepackage{tikz}
 \usetikzlibrary{patterns, decorations.pathreplacing, bending, angles,quotes}
 \usepackage{xurl}
-\usepackage{dirtytalk}
+\usepackage{dirtytalk} % for the \say environment
 
 \usepackage{hyperref}
 
@@ -121,7 +121,6 @@
 \DeclareMathOperator*{\argmax}{argmax}
 
 % Custom commands
-%\newcommand*{\set}[2]{\left{\,#1\,\middle|\,#2\,\right}}
 \newcommand*{\set}[2]{\left\{\,#1 \: \middle| \: #2\,\right\}}
 \newcommand*{\trace}[1]{\langle #1 \rangle}
 \newcommand*{\sem}[1]{\llbracket #1 \rrbracket}
