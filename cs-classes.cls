@@ -111,9 +111,11 @@
 \newcommand{\E}{\mathbb{E}}
 \renewcommand{\L}{\mathcal{L}}
 \renewcommand{\P}{\mathbb{P}}
+\newcommand{\Pc}{\mathcal{P}}
 \renewcommand{\S}{\mathcal{S}}
 \newcommand{\X}{\mathcal{X}}
 \newcommand{\I}{\mathbb{I}}
+\newcommand{\T}{\mathcal{T}}
 
 \DeclareMathOperator*{\argmin}{argmin}
 \DeclareMathOperator*{\argmax}{argmax}
@@ -122,3 +124,4 @@
 %\newcommand*{\set}[2]{\left{\,#1\,\middle|\,#2\,\right}}
 \newcommand*{\set}[2]{\left\{\,#1 \: \middle| \: #2\,\right\}}
 \newcommand*{\trace}[1]{\langle #1 \rangle}
+\newcommand*{\sem}[1]{\llbracket #1 \rrbracket}
