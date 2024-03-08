@@ -99,6 +99,7 @@
 \newtheorem{exercise}{Exercise}
 
 \setlist[itemize]{noitemsep}
+\setlist[enumerate]{noitemsep}
 \fi
 
 % Usefull new commands
