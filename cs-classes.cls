@@ -117,6 +117,7 @@
 \newcommand{\X}{\mathcal{X}}
 \newcommand{\I}{\mathbb{I}}
 \newcommand{\T}{\mathcal{T}}
+\newcommand{\Y}{\mathcal{Y}}
 
 \DeclareMathOperator*{\argmin}{argmin}
 \DeclareMathOperator*{\argmax}{argmax}
