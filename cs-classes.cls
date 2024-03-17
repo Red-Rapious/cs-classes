@@ -53,6 +53,7 @@
 \usetikzlibrary{patterns, decorations.pathreplacing, bending, angles,quotes}
 \usepackage{xurl}
 \usepackage{dirtytalk} % for the \say environment
+\usepackage{booktabs}
 
 \usepackage{hyperref}
 
