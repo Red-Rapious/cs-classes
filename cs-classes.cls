@@ -119,6 +119,7 @@
 \newcommand{\I}{\mathbb{I}}
 \newcommand{\T}{\mathcal{T}}
 \newcommand{\Y}{\mathcal{Y}}
+\newcommand{\until}{\mathfrak{U}}
 
 \DeclareMathOperator*{\argmin}{argmin}
 \DeclareMathOperator*{\argmax}{argmax}
