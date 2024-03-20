@@ -1,7 +1,7 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{cs-classes/cs-classes}[2024/01/28 A simple LaTeX class for Computer Science classes]
 
-% Options
+%%% Options
 \newif\if@french
 \DeclareOption{french}{\@frenchtrue}
 
@@ -16,7 +16,7 @@
 \usepackage[british]{babel}
 \fi
 
-
+%%% Packages
 \LoadClass[12pt,a4paper]{article}
 \usepackage[a4paper,margin=2cm]{geometry}
 
@@ -70,7 +70,7 @@
 
 \numberwithin{equation}{subsection}
 
-% Changed classical symbols
+%%% Change classical symbols
 \let\temp\phi
 \let\phi\varphi
 \let\varphi\temp
@@ -79,7 +79,7 @@
 \renewcommand{\leq}{\leqslant}
 \renewcommand{\geq}{\geqslant}
 
-% Theorems
+%%% Theorems
 \if@french
 \newtheorem*{theoreme}{Théorème}
 \newtheorem{lemme}{Lemme}
@@ -104,7 +104,7 @@
 \setlist[enumerate]{noitemsep}
 \fi
 
-% Usefull new commands
+%%% Usefull new commands
 \newcommand{\N}{\mathbb{N}}
 \newcommand{\Z}{\mathbb{Z}}
 \newcommand{\Q}{\mathbb{Q}}
@@ -125,21 +125,35 @@
 \DeclareMathOperator*{\argmin}{argmin}
 \DeclareMathOperator*{\argmax}{argmax}
 
-% Custom commands
+%%% Custom commands
 \newcommand*{\set}[2]{\left\{\,#1 \: \middle| \: #2\,\right\}}
 \newcommand*{\trace}[1]{\langle #1 \rangle}
 \newcommand*{\sem}[1]{\llbracket #1 \rrbracket}
 \newcommand*{\roundsem}[1]{\llparenthesis #1 \rrparenthesis}
 \newcommand*{\ind}{\mathds{1}}
+\newcommand*{\false}{\textnormal{false}}
+\newcommand*{\true}{\textnormal{true}}
 
-% Custom environments
-\newenvironment{grammar}
+%%% Custom environments
+% Grammar in math mode
+\newenvironment{mgrammar}
     {
     \setlength\tabcolsep{4pt}
-    \begin{tabular}{>{$}l<{$}>{$}r<{$}>{$}l<{$}}
+    \begin{tabular}{>{$}l<{$}>{$}r<{$}>{$}l<{$} r}
     }
     { 
     \end{tabular}
     }
-\newcommand*{\firstrule}[2]{#1 &::= & #2\\}
-\newcommand*{\grule}[1]{&| &#1\\}
+
+% Grammar in text mode
+\newenvironment{grammar}
+    {
+    \setlength\tabcolsep{4pt}
+    \begin{tabular}{l r l r}
+    }
+    { 
+    \end{tabular}
+    }
+% Command for grammar lines
+\newcommand*{\firstrule}[3]{#1 &::= & #2& \quad \textit{(#3)}\\}
+\newcommand*{\grule}[2]{&| &#1& \quad \textit{(#2)}\\}
