@@ -54,6 +54,7 @@
 \usepackage{xurl}
 \usepackage{dirtytalk} % for the \say environment
 \usepackage{booktabs}
+\usepackage{array}
 
 \usepackage{hyperref}
 
@@ -129,3 +130,16 @@
 \newcommand*{\trace}[1]{\langle #1 \rangle}
 \newcommand*{\sem}[1]{\llbracket #1 \rrbracket}
 \newcommand*{\roundsem}[1]{\llparenthesis #1 \rrparenthesis}
+\newcommand*{\ind}{\mathds{1}}
+
+% Custom environments
+\newenvironment{grammar}
+    {
+    \setlength\tabcolsep{4pt}
+    \begin{tabular}{>{$}l<{$}>{$}r<{$}>{$}l<{$}}
+    }
+    { 
+    \end{tabular}
+    }
+\newcommand*{\firstrule}[2]{#1 &::= & #2\\}
+\newcommand*{\grule}[1]{&| &#1\\}
