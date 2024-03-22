@@ -25,9 +25,9 @@
 \usepackage[utf8]{inputenc}
 \usepackage{csquotes}
 
-\usepackage[kerning=true]{microtype}
+\usepackage[kerning=true]{microtype} % micro-alignment
 
-\usepackage{lmodern}
+\usepackage{lmodern} % change the font
 
 \usepackage{amsmath}
 \usepackage{amsfonts}
@@ -53,8 +53,9 @@
 \usetikzlibrary{patterns, decorations.pathreplacing, bending, angles,quotes}
 \usepackage{xurl}
 \usepackage{dirtytalk} % for the \say environment
-\usepackage{booktabs}
-\usepackage{array}
+\usepackage{booktabs} % for improved tabular lines
+\usepackage{array} % for options in tabular columns types
+\usepackage{ebproof} % for proof trees
 
 \usepackage{hyperref}
 
@@ -119,6 +120,7 @@
 \newcommand{\X}{\mathcal{X}}
 \newcommand{\I}{\mathbb{I}}
 \newcommand{\T}{\mathcal{T}}
+\newcommand{\V}{\mathbb{V}}
 \newcommand{\Y}{\mathcal{Y}}
 \newcommand{\until}{\mathfrak{U}}
 
@@ -133,6 +135,7 @@
 \newcommand*{\ind}{\mathds{1}}
 \newcommand*{\false}{\textnormal{false}}
 \newcommand*{\true}{\textnormal{true}}
+\newcommand*{\hoare}[3]{\left\{#1\right\} \; #2 \; \left\{#3\right\}}
 
 %%% Custom environments
 % Grammar in math mode
