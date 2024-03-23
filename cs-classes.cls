@@ -82,24 +82,26 @@
 
 %%% Theorems
 \if@french
+\newtheorem*{remarque}{Remarque}
+
+\theoremstyle{definition}
+\newtheorem*{definition}{Définition}
 \newtheorem*{theoreme}{Théorème}
 \newtheorem{lemme}{Lemme}
 \newtheorem*{corollary}{Corollaire}
 \newtheorem{propriete}{Propriété}
 \newtheorem*{exemple}{Exemple}
-\newtheorem*{remarque}{Remarque}
-\theoremstyle{definition}
-\newtheorem*{definition}{Définition}
 \else
+\newtheorem*{remark}{Remark}
+
+\theoremstyle{definition}
+\newtheorem*{definition}{Definition}
+\newtheorem{exercise}{Exercise}
 \newtheorem*{theorem}{Theorem}
 \newtheorem{lemma}{Lemma}
 \newtheorem*{corollary}{Corollary}
 \newtheorem{property}{Property}
 \newtheorem*{example}{Example}
-\newtheorem*{remark}{Remark}
-\theoremstyle{definition}
-\newtheorem*{definition}{Definition}
-\newtheorem{exercise}{Exercise}
 
 \setlist[itemize]{noitemsep}
 \setlist[enumerate]{noitemsep}
