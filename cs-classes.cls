@@ -160,5 +160,6 @@
     \end{tabular}
     }
 % Command for grammar lines
-\newcommand*{\firstrule}[3]{#1 &::= & #2& \quad \textit{(#3)}\\}
-\newcommand*{\grule}[2]{&| &#1& \quad \textit{(#2)}\\}
+\newcommand*{\firstrule}[3]{#1 &::= & #2& \quad \ifstrempty{#3}{}{\textit{(#3)}}\\}
+\newcommand*{\grule}[2]{&| &#1& \quad \ifstrempty{#2}{}{\textit{(#2)}}\\}
+\newcommand*{\gskip}{&&\\}
