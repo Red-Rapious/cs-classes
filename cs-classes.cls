@@ -138,6 +138,7 @@
 \newcommand*{\false}{\textnormal{false}}
 \newcommand*{\true}{\textnormal{true}}
 \newcommand*{\hoare}[3]{\left\{#1\right\} \; #2 \; \left\{#3\right\}}
+\newcommand*{\sqhoare}[3]{\left[#1\right] \; #2 \; \left[#3\right]}
 
 %%% Custom environments
 % Grammar in math mode
