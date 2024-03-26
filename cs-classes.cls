@@ -115,6 +115,7 @@
 \newcommand{\C}{\mathbb{C}}
 \newcommand{\A}{\mathcal{A}}
 \newcommand{\E}{\mathbb{E}}
+\newcommand{\Ec}{\mathcal{E}}
 \renewcommand{\L}{\mathcal{L}}
 \renewcommand{\P}{\mathbb{P}}
 \newcommand{\Pc}{\mathcal{P}}
