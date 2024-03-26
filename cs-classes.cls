@@ -114,6 +114,7 @@
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\C}{\mathbb{C}}
 \newcommand{\A}{\mathcal{A}}
+\newcommand{\Ab}{\mathbb{A}}
 \newcommand{\E}{\mathbb{E}}
 \newcommand{\Ec}{\mathcal{E}}
 \renewcommand{\L}{\mathcal{L}}
