@@ -97,6 +97,7 @@
 \theoremstyle{definition}
 \newtheorem*{definition}{Definition}
 \newtheorem{exercise}{Exercise}
+\newtheorem{question}{Question}
 \newtheorem*{theorem}{Theorem}
 \newtheorem{lemma}{Lemma}
 \newtheorem*{corollary}{Corollary}
