@@ -82,8 +82,9 @@
 
 %%% Theorems
 \if@french
+% Italic
 \newtheorem*{remarque}{Remarque}
-
+% Normal text
 \theoremstyle{definition}
 \newtheorem*{definition}{Définition}
 \newtheorem*{theoreme}{Théorème}
@@ -92,8 +93,9 @@
 \newtheorem{propriete}{Propriété}
 \newtheorem*{exemple}{Exemple}
 \else
+% Italic
 \newtheorem*{remark}{Remark}
-
+% Normal text
 \theoremstyle{definition}
 \newtheorem*{definition}{Definition}
 \newtheorem{exercise}{Exercise}
@@ -109,6 +111,7 @@
 \fi
 
 %%% Usefull new commands
+% Special maths letters
 \newcommand{\N}{\mathbb{N}}
 \newcommand{\Z}{\mathbb{Z}}
 \newcommand{\Q}{\mathbb{Q}}
@@ -127,17 +130,29 @@
 \newcommand{\T}{\mathcal{T}}
 \newcommand{\V}{\mathbb{V}}
 \newcommand{\Y}{\mathcal{Y}}
+
+% Transpose
+\newcommand{\tp}{\top}
+
+% Machine learning
 \newcommand{\risk}{\mathcal{R}}
 \newcommand{\emrisk}{\hat{\mathcal{R}}}
 \newcommand{\hatf}{\hat{f}}
+\newcommand{\htheta}{\hat{\theta}}
+\DeclarePairedDelimiter{\norm}{\lVert}{\rVert}
 
+% Linear Algebra
+\DeclareMathOperator*{\im}{Im}
+\DeclareMathOperator*{\rg}{rg}
+
+% Semantics
+\DeclarePairedDelimiter{\sem}{\llbracket}{\rrbracket}
 \newcommand{\until}{\mathfrak{U}}
 
+% Misc.
 \DeclareMathOperator*{\argmin}{argmin}
 \DeclareMathOperator*{\argmax}{argmax}
 
-\DeclarePairedDelimiter{\norm}{\lVert}{\rVert}
-\DeclarePairedDelimiter{\sem}{\llbracket}{\rrbracket}
 
 %%% Custom commands
 \newcommand*{\set}[2]{\left\{\,#1 \: \middle| \: #2\,\right\}}
@@ -170,6 +185,7 @@
     { 
     \end{tabular}
     }
+
 % Command for grammar lines
 \newcommand*{\firstrule}[3]{#1 &::= & #2& \quad \ifstrempty{#3}{}{\textit{(#3)}}\\}
 \newcommand*{\grule}[2]{&| &#1& \quad \ifstrempty{#2}{}{\textit{(#2)}}\\}
