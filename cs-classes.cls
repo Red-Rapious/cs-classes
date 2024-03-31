@@ -71,6 +71,8 @@
 
 \numberwithin{equation}{subsection}
 
+\renewcommand{\footnoterule}{\vfill\kern -4pt \hrule width 0.4\columnwidth \kern 2.6pt}
+
 %%% Change classical symbols
 \let\temp\phi
 \let\phi\varphi
