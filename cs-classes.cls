@@ -127,15 +127,22 @@
 \newcommand{\T}{\mathcal{T}}
 \newcommand{\V}{\mathbb{V}}
 \newcommand{\Y}{\mathcal{Y}}
+\newcommand{\risk}{\mathcal{R}}
+\newcommand{\emrisk}{\hat{\mathcal{R}}}
+\newcommand{\hatf}{\hat{f}}
+
 \newcommand{\until}{\mathfrak{U}}
 
 \DeclareMathOperator*{\argmin}{argmin}
 \DeclareMathOperator*{\argmax}{argmax}
 
+\DeclarePairedDelimiter{\norm}{\lVert}{\rVert}
+\DeclarePairedDelimiter{\sem}{\llbracket}{\rrbracket}
+
 %%% Custom commands
 \newcommand*{\set}[2]{\left\{\,#1 \: \middle| \: #2\,\right\}}
 \newcommand*{\trace}[1]{\langle #1 \rangle}
-\newcommand*{\sem}[1]{\llbracket #1 \rrbracket}
+\newcommand*{\iset}[2]{\sem{#1, #2}}
 \newcommand*{\roundsem}[1]{\llparenthesis #1 \rrparenthesis}
 \newcommand*{\ind}{\mathds{1}}
 \newcommand*{\false}{\textnormal{false}}
