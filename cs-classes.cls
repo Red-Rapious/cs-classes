@@ -56,6 +56,7 @@
 \usepackage{booktabs} % for improved tabular lines
 \usepackage{array} % for options in tabular columns types
 \usepackage{ebproof} % for proof trees
+\usepackage{caption} % to center captions
 
 \usepackage{hyperref}
 
