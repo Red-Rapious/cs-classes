@@ -147,6 +147,7 @@
 % Linear Algebra
 \DeclareMathOperator*{\im}{Im}
 \DeclareMathOperator*{\rg}{rg}
+\DeclareMathOperator*{\Tr}{Tr}
 
 % Semantics
 \DeclarePairedDelimiter{\sem}{\llbracket}{\rrbracket}
