@@ -149,6 +149,8 @@
 \DeclareMathOperator*{\rg}{rg}
 \DeclareMathOperator*{\Tr}{Tr}
 
+\DeclareMathOperator*{\Conv}{Conv} % Convex Hull
+
 % Semantics
 \DeclarePairedDelimiter{\sem}{\llbracket}{\rrbracket}
 \newcommand{\until}{\mathfrak{U}}
