@@ -158,7 +158,8 @@
 % Misc.
 \DeclareMathOperator*{\argmin}{argmin}
 \DeclareMathOperator*{\argmax}{argmax}
-
+\newcommand{\dd}{\,\textnormal{d}}
+\DeclarePairedDelimiter{\openseg}{\rbrack}{\lbrack}
 
 %%% Custom commands
 \newcommand*{\set}[2]{\left\{\,#1 \: \middle| \: #2\,\right\}}
