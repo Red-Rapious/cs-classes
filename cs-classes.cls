@@ -139,8 +139,9 @@
 \newcommand{\tp}{\top}
 
 % Machine learning
-\newcommand{\risk}{\mathcal{R}}
-\newcommand{\emrisk}{\hat{\mathcal{R}}}
+\newcommand{\risk}{\mathcal{R}} % risk
+\newcommand{\emrisk}{\hat{\mathcal{R}}} % empirical risk
+\newcommand{\exrisk}{\mathscr{R}} % excess risk
 \newcommand{\hatf}{\hat{f}}
 \newcommand{\htheta}{\hat{\theta}}
 \DeclarePairedDelimiter{\norm}{\lVert}{\rVert}
