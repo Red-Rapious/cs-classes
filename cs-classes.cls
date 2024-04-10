@@ -116,6 +116,7 @@
 %%% Usefull new commands
 % Special maths letters
 \newcommand{\N}{\mathbb{N}}
+\newcommand{\Zc}{\mathcal{Z}}
 \newcommand{\Z}{\mathbb{Z}}
 \newcommand{\Q}{\mathbb{Q}}
 \newcommand{\R}{\mathbb{R}}
