@@ -176,6 +176,8 @@
 \newcommand*{\hoare}[3]{\left\{#1\right\} \; #2 \; \left\{#3\right\}}
 \newcommand*{\sqhoare}[3]{\left[#1\right] \; #2 \; \left[#3\right]}
 
+\newcommand*{\mathpdf}[1]{\texorpdfstring{$#1$}{#1}}
+
 %%% Custom environments
 % Grammar in math mode
 \newenvironment{mgrammar}
