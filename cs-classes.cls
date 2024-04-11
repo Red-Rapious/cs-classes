@@ -154,14 +154,15 @@
 \DeclareMathOperator*{\diag}{diag} % diagonal matrix
 
 \DeclareMathOperator*{\Conv}{Conv} % Convex Hull
+\DeclareMathOperator*{\Span}{Span} % Convex Hull
 
 % Semantics
 \DeclarePairedDelimiter{\sem}{\llbracket}{\rrbracket}
 \newcommand{\until}{\mathfrak{U}}
 
 % Misc.
-\DeclareMathOperator*{\argmin}{argmin}
-\DeclareMathOperator*{\argmax}{argmax}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
 \newcommand{\dd}{\,\textnormal{d}}
 \DeclarePairedDelimiter{\openseg}{\rbrack}{\lbrack}
 
@@ -177,6 +178,8 @@
 \newcommand*{\sqhoare}[3]{\left[#1\right] \; #2 \; \left[#3\right]}
 
 \newcommand*{\mathpdf}[1]{\texorpdfstring{$#1$}{#1}}
+
+\newcommand*{\where}{\quad\textnormal{where}\quad}
 
 %%% Custom environments
 % Grammar in math mode
