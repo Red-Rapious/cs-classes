@@ -123,20 +123,20 @@
 \newcommand{\C}{\mathbb{C}}
 \newcommand{\A}{\mathcal{A}}
 \newcommand{\Ab}{\mathbb{A}}
-\newcommand{\E}{\mathbb{E}}
 \newcommand{\Ec}{\mathcal{E}}
 \renewcommand{\L}{\mathcal{L}}
-\renewcommand{\P}{\mathbb{P}}
 \newcommand{\Pc}{\mathcal{P}}
 \renewcommand{\S}{\mathcal{S}}
 \newcommand{\X}{\mathcal{X}}
 \newcommand{\I}{\mathbb{I}}
 \newcommand{\T}{\mathcal{T}}
-\newcommand{\V}{\mathbb{V}}
 \newcommand{\Y}{\mathcal{Y}}
 
-% Transpose
-\newcommand{\tp}{\top}
+% Probability
+\newcommand{\E}{\mathbb{E}} % expectation
+\renewcommand{\P}{\mathbb{P}} % probability
+\newcommand{\V}{\mathbb{V}} % variance
+\DeclareMathOperator*{\Cov}{Cov} % covariance
 
 % Machine learning
 \newcommand{\risk}{\mathcal{R}} % risk
@@ -147,9 +147,11 @@
 \DeclarePairedDelimiter{\norm}{\lVert}{\rVert}
 
 % Linear Algebra
-\DeclareMathOperator*{\im}{Im}
-\DeclareMathOperator*{\rg}{rg}
-\DeclareMathOperator*{\Tr}{Tr}
+\DeclareMathOperator*{\im}{Im} % image
+\DeclareMathOperator*{\rg}{rg} % rank
+\DeclareMathOperator*{\Tr}{Tr} % trace
+\newcommand{\tp}{\top} % Transpose
+\DeclareMathOperator*{\diag}{diag} % diagonal matrix
 
 \DeclareMathOperator*{\Conv}{Conv} % Convex Hull
 
