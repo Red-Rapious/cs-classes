@@ -142,9 +142,9 @@
 \theoremstyle{definition}
 \newtheorem*{definition}{Définition}
 \newtheorem*{theoreme}{Théorème}
-\newtheorem{lemme}{Lemme}
+\newtheorem{lemme}{Lemme}[section]
 \newtheorem*{corollary}{Corollaire}
-\newtheorem{propriete}{Propriété}
+\newtheorem{propriete}{Propriété}[section]
 \newtheorem*{exemple}{Exemple}
 \else
 % Italic
@@ -155,9 +155,9 @@
 \newtheorem{exercise}{Exercise}
 \newtheorem{question}{Question}
 \newtheorem*{theorem}{Theorem}
-\newtheorem{lemma}{Lemma}
+\newtheorem{lemma}{Lemma}[section]
 \newtheorem*{corollary}{Corollary}
-\newtheorem{property}{Property}
+\newtheorem{property}{Property}[section]
 \newtheorem*{example}{Example}
 
 \setlist[itemize]{noitemsep}
