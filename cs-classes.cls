@@ -8,8 +8,8 @@
 \newif\if@toc
 \DeclareOption{toc}{\@toctrue}
 
-\newif\if@titlepage
-\DeclareOption{titeplage}{\@titlepagetrue}
+\newif\if@titlepaged
+\DeclareOption{titlepaged}{\@titlepagedtrue}
 
 \ProcessOptions\relax
 
@@ -64,7 +64,7 @@
 
 \usepackage{hyperref}
 
-\if@titlepage
+\if@titlepaged
 \AfterEndPreamble{
     \begin{titlepage}
         \centering
@@ -96,7 +96,6 @@
             \fi
         }
     
-        % Set this size for the remaining titlepage.
         \large
     
         \vfill
@@ -109,12 +108,13 @@
         Last modified \today
         \fi
     \end{titlepage}
-    }
+}
 \else
 \AfterEndPreamble{\maketitle}
 \setlength{\droptitle}{-5ex}
 \pretitle{\begin{center}\LARGE\bfseries}
 \fi
+
 \if@toc
 \AfterEndPreamble{\tableofcontents\newpage}
 \else
