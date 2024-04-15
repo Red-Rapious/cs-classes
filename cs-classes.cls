@@ -8,6 +8,9 @@
 \newif\if@toc
 \DeclareOption{toc}{\@toctrue}
 
+\newif\if@titlepage
+\DeclareOption{titeplage}{\@titlepagetrue}
+
 \ProcessOptions\relax
 
 \if@french
@@ -61,6 +64,7 @@
 
 \usepackage{hyperref}
 
+\if@titlepage
 \AfterEndPreamble{
     \begin{titlepage}
         \centering
@@ -105,14 +109,17 @@
         Last modified \today
         \fi
     \end{titlepage}
-}
+    }
+\else
+\AfterEndPreamble{\maketitle}
+\setlength{\droptitle}{-5ex}
+\pretitle{\begin{center}\LARGE\bfseries}
+\fi
 \if@toc
 \AfterEndPreamble{\tableofcontents\newpage}
 \else
 \fi
 
-%\setlength{\droptitle}{-5ex}
-%\pretitle{\begin{center}\LARGE\bfseries}
 
 \numberwithin{equation}{subsection}
 
