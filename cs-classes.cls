@@ -57,18 +57,62 @@
 \usepackage{array} % for options in tabular columns types
 \usepackage{ebproof} % for proof trees
 \usepackage{caption} % to center captions
+\usepackage{titling}
 
 \usepackage{hyperref}
 
+\AfterEndPreamble{
+    \begin{titlepage}
+        \centering
+    
+        \vspace*{1cm}
+    
+        % Title and subtitle are enclosed between two rules.
+        \rule{\textwidth}{1.5pt}
+    
+        % Title
+        \vspace{1.5\baselineskip}
+        {\huge \textbf{\thetitle}}
+        \vspace{.9\baselineskip}
+        
+        \rule{\textwidth}{1.5pt}
+        \vspace{0.2cm}
+
+        
+        {
+            \large
+            \theauthor
+
+            \vspace{.5\baselineskip}
+
+            \if@french
+            Notes de cours par Antoine Groudiev
+            \else
+            Class notes by Antoine Groudiev
+            \fi
+        }
+    
+        % Set this size for the remaining titlepage.
+        \large
+    
+        \vfill
+
+        \includegraphics[width=.4\textwidth]{ens-psl-logo.png}
+        
+        \if@french
+        Version du \today
+        \else
+        Last modified \today
+        \fi
+    \end{titlepage}
+}
 \if@toc
-\AfterEndPreamble{\maketitle\tableofcontents}
+\AfterEndPreamble{\tableofcontents\newpage}
 \else
-\AfterEndPreamble{\maketitle}
 \fi
 
-\usepackage{titling}
-\setlength{\droptitle}{-5ex}
-\pretitle{\begin{center}\LARGE\bfseries}
+%\setlength{\droptitle}{-5ex}
+%\pretitle{\begin{center}\LARGE\bfseries}
 
 \numberwithin{equation}{subsection}
 
