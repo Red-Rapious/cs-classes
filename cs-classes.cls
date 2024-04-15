@@ -62,6 +62,8 @@
 \usepackage{caption} % to center captions
 \usepackage{titling}
 
+\usepackage{parskip} % space between paragraphs
+
 \usepackage{hyperref}
 
 \if@titlepaged
