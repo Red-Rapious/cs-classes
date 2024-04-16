@@ -66,6 +66,9 @@
 
 \usepackage{hyperref}
 
+\usetikzlibrary{external}
+\tikzexternalize[prefix=figures/]
+
 \if@titlepaged
 \AfterEndPreamble{
     \begin{titlepage}
