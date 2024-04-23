@@ -187,6 +187,7 @@
 \newcommand{\I}{\mathbb{I}}
 \newcommand{\T}{\mathcal{T}}
 \newcommand{\Y}{\mathcal{Y}}
+\newcommand{\F}{\mathcal{F}}
 
 % Probability
 \newcommand{\E}{\mathbb{E}} % expectation
