@@ -64,10 +64,14 @@
 
 \usepackage{parskip} % space between paragraphs
 
+\usepackage{chngcntr} % figure counter within section
+
 \usepackage{hyperref}
 
 \usetikzlibrary{external}
 \tikzexternalize[prefix=figures/]
+
+\counterwithin{figure}{section}
 
 \if@titlepaged
 \AfterEndPreamble{
