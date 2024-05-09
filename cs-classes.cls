@@ -67,6 +67,11 @@
 \usepackage{chngcntr} % figure counter within section
 
 \usepackage{hyperref}
+\hypersetup{
+    colorlinks     = false,
+    urlbordercolor = red,
+    citecolor      = gray,
+}
 
 \usetikzlibrary{external}
 \tikzexternalize[prefix=figures/]
