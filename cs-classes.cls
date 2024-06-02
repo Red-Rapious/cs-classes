@@ -54,6 +54,8 @@
 \usepackage{graphicx}
 \usepackage{tikz}
 \usetikzlibrary{patterns, decorations.pathreplacing, bending, angles,quotes}
+\usepackage{listofitems} % for \readlist to create arrays
+
 \usepackage{xurl}
 \usepackage{dirtytalk} % for the \say environment
 \usepackage{booktabs} % for improved tabular lines
@@ -75,6 +77,8 @@
 
 \usetikzlibrary{external}
 \tikzexternalize[prefix=figures/]
+
+\tikzstyle{nnnode}=[thick,draw=blue,fill=blue!20,circle,minimum size=22] % nodes for neural networks
 
 \counterwithin{figure}{section}
 
