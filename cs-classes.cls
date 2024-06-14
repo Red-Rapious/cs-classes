@@ -218,6 +218,7 @@
 \newcommand{\htheta}{\hat{\theta}}
 \DeclarePairedDelimiter{\norm}{\lVert}{\rVert}
 \DeclareMathOperator*{\KL}{KL} % Kullback-Leibler divergence
+\DeclareMathOperator*{\ReLU}{ReLU}
 
 % Linear Algebra
 \DeclareMathOperator*{\im}{Im} % image
