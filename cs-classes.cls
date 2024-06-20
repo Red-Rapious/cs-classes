@@ -41,6 +41,7 @@
 \usepackage{calc}
 \usepackage{dsfont} % mostly for \mathds{1}
 \usepackage{stmaryrd}
+\usepackage{newtxmath} % mathbb-like digits
 
 \usepackage{mathtools}
 \usepackage{wrapfig}
