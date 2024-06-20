@@ -76,6 +76,7 @@
 }
 
 \usetikzlibrary{external}
+\usetikzlibrary{hobby}
 \tikzexternalize[prefix=figures/]
 
 \tikzstyle{nnnode}=[thick,draw=blue,fill=blue!20,circle,minimum size=22] % nodes for neural networks
