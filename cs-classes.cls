@@ -82,6 +82,7 @@
 \tikzstyle{nnnode}=[thick,draw=blue,fill=blue!20,circle,minimum size=22] % nodes for neural networks
 
 \counterwithin{figure}{section}
+\captionsetup[figure]{hypcap=false}
 
 \if@titlepaged
 \AfterEndPreamble{
