@@ -221,6 +221,7 @@
 \DeclarePairedDelimiter{\norm}{\lVert}{\rVert}
 \DeclareMathOperator*{\KL}{KL} % Kullback-Leibler divergence
 \DeclareMathOperator*{\ReLU}{ReLU}
+\DeclareMathOperator*{\softmax}{softmax}
 
 % Linear Algebra
 \DeclareMathOperator*{\im}{Im} % image
@@ -256,6 +257,8 @@
 \newcommand*{\mathpdf}[1]{\texorpdfstring{$#1$}{#1}}
 
 \newcommand*{\where}{\quad\textnormal{where}\quad}
+
+\newcommand*{\partfrac}[2]{\frac{\partial#1}{\partial#2}}
 
 %%% Custom environments
 % Grammar in math mode
