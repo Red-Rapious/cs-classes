@@ -288,3 +288,14 @@
 \newcommand*{\firstrule}[3]{#1 &::= & #2& \quad \ifstrempty{#3}{}{\textit{(#3)}}\\}
 \newcommand*{\grule}[2]{&| &#1& \quad \ifstrempty{#2}{}{\textit{(#2)}}\\}
 \newcommand*{\gskip}{&&\\}
+
+% TikZ macros
+\newcommand*{\parallelepiped}[8]{
+    \pgfmathsetmacro{\cubex}{#2}
+    \pgfmathsetmacro{\cubey}{#3}
+    \pgfmathsetmacro{\cubez}{#4}
+
+    \draw[fill=#8, thick] #1 -- ++ (-\cubex,0,0) -- node[left, pos=.5] {#6} ++ (0,-\cubey,0) -- node[below, pos=.5] {#5} ++(\cubex,0,0) --  cycle;
+    \draw[fill=#8, thick] #1 -- ++(0,0,-\cubez) -- ++(0,-\cubey,0) -- node[right, pos=.5] {#7} ++(0,0,\cubez) -- cycle;
+    \draw[fill=#8, thick] #1 -- ++(-\cubex,0,0) -- ++(0,0,-\cubez) -- ++(\cubex,0,0) -- cycle;
+}
