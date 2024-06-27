@@ -53,7 +53,6 @@
 \usepackage{minted}
 \usepackage{graphicx}
 \usepackage{tikz}
-\usetikzlibrary{patterns, decorations.pathreplacing, bending, angles,quotes}
 \usepackage{listofitems} % for \readlist to create arrays
 
 \usepackage{xurl}
@@ -75,8 +74,12 @@
     citecolor      = gray,
 }
 
+\usetikzlibrary{patterns, decorations.pathreplacing, bending, angles,quotes}
 \usetikzlibrary{external}
 \usetikzlibrary{hobby}
+\usetikzlibrary{matrix}
+\usetikzlibrary{calc}
+
 \tikzexternalize[prefix=figures/]
 
 \tikzstyle{nnnode}=[thick,draw=blue,fill=blue!20,circle,minimum size=22] % nodes for neural networks
