@@ -53,7 +53,8 @@
 \usepackage{minted}
 \usepackage{graphicx}
 \usepackage{tikz}
-\usepackage{tikz-3dplot}
+\usepackage{tikz-3dplot} % for 3d plots
+\usepackage{varwidth} % for text in TikZ rectangles
 
 \usepackage{listofitems} % for \readlist to create arrays
 
@@ -193,22 +194,22 @@
 
 %%% Usefull new commands
 % Special maths letters
-\newcommand{\N}{\mathbb{N}}
-\newcommand{\Zc}{\mathcal{Z}}
-\newcommand{\Z}{\mathbb{Z}}
-\newcommand{\Q}{\mathbb{Q}}
-\newcommand{\R}{\mathbb{R}}
-\newcommand{\C}{\mathbb{C}}
-\newcommand{\A}{\mathcal{A}}
-\newcommand{\Ab}{\mathbb{A}}
-\newcommand{\Ec}{\mathcal{E}}
-\renewcommand{\L}{\mathcal{L}}
-\newcommand{\Pc}{\mathcal{P}}
-\renewcommand{\S}{\mathcal{S}}
-\newcommand{\X}{\mathcal{X}}
-\newcommand{\I}{\mathbb{I}}
+\newcommand{\N}{\mathbb{N}} % Natural numbers
+\newcommand{\Zc}{\mathcal{Z}} % Some set
+\newcommand{\Z}{\mathbb{Z}} % Relative numbers
+\newcommand{\Q}{\mathbb{Q}} % Rationnal numbers
+\newcommand{\R}{\mathbb{R}} % Real numbers
+\newcommand{\C}{\mathbb{C}} % Complex numbers
+\newcommand{\A}{\mathcal{A}} % Automata
+\newcommand{\Ab}{\mathbb{A}} % Semantic arrays set
+\newcommand{\Ec}{\mathcal{E}} % Semantic expressions
+\renewcommand{\L}{\mathcal{L}} % Loss function
+\newcommand{\Pc}{\mathcal{P}} % Parts of a set
+\renewcommand{\S}{\mathcal{S}} % Semantic
+\newcommand{\X}{\mathcal{X}} % Input set
+\newcommand{\I}{\mathbb{I}} % Semantic integers
 \newcommand{\T}{\mathcal{T}}
-\newcommand{\Y}{\mathcal{Y}}
+\newcommand{\Y}{\mathcal{Y}} % Output set
 \newcommand{\F}{\mathcal{F}}
 
 % Probability
@@ -241,28 +242,30 @@
 % Semantics
 \DeclarePairedDelimiter{\sem}{\llbracket}{\rrbracket}
 \newcommand{\until}{\mathfrak{U}}
+\newcommand*{\trace}[1]{\langle #1 \rangle}
 
 % Misc.
 \DeclareMathOperator*{\argmin}{arg\,min}
 \DeclareMathOperator*{\argmax}{arg\,max}
-\newcommand{\dd}{\,\textnormal{d}}
-\DeclarePairedDelimiter{\openseg}{\rbrack}{\lbrack}
+\newcommand{\dd}{\,\textnormal{d}} % Derivative d
+\DeclarePairedDelimiter{\openseg}{\rbrack}{\lbrack} % Open segment ]a, b[
 
 %%% Custom commands
-\newcommand*{\set}[2]{\left\{\,#1 \: \middle| \: #2\,\right\}}
-\newcommand*{\trace}[1]{\langle #1 \rangle}
-\newcommand*{\iset}[2]{\sem{#1, #2}}
+\newcommand*{\set}[2]{\left\{\,#1 \: \middle| \: #2\,\right\}} % Set of the form { x | y }
+\newcommand*{\iset}[2]{\sem{#1, #2}} % Integer set with double bars
 \newcommand*{\roundsem}[1]{\llparenthesis #1 \rrparenthesis}
-\newcommand*{\ind}{\mathds{1}}
+\newcommand*{\ind}{\mathds{1}} % Indicator
 \newcommand*{\false}{\textnormal{false}}
 \newcommand*{\true}{\textnormal{true}}
-\newcommand*{\hoare}[3]{\left\{#1\right\} \; #2 \; \left\{#3\right\}}
-\newcommand*{\sqhoare}[3]{\left[#1\right] \; #2 \; \left[#3\right]}
+\newcommand*{\hoare}[3]{\left\{#1\right\} \; #2 \; \left\{#3\right\}} % Hoare triple
+\newcommand*{\sqhoare}[3]{\left[#1\right] \; #2 \; \left[#3\right]} % Square Hoare triple
 
+% Used to add math in title without causing a PDF error
 \newcommand*{\mathpdf}[1]{\texorpdfstring{$#1$}{#1}}
 
 \newcommand*{\where}{\quad\textnormal{where}\quad}
 
+% ∂f/∂x
 \newcommand*{\partfrac}[2]{\frac{\partial#1}{\partial#2}}
 
 %%% Custom environments
@@ -298,6 +301,6 @@
     \pgfmathsetmacro{\cubez}{#4}
 
     \draw[fill=#8, thick] #1 -- ++ (-\cubex,0,0) -- node[left, pos=.5] {#6} ++ (0,-\cubey,0) -- node[below, pos=.5] {#5} ++(\cubex,0,0) --  cycle;
-    \draw[fill=#8, thick] #1 -- ++(0,0,-\cubez) -- ++(0,-\cubey,0) -- node[right, pos=.5] {#7} ++(0,0,\cubez) -- cycle;
+    \draw[fill=#8!gray!80, thick] #1 -- ++(0,0,-\cubez) -- ++(0,-\cubey,0) -- node[right, pos=.5] {#7} ++(0,0,\cubez) -- cycle;
     \draw[fill=#8, thick] #1 -- ++(-\cubex,0,0) -- ++(0,0,-\cubez) -- ++(\cubex,0,0) -- cycle;
 }
