@@ -53,6 +53,8 @@
 \usepackage{minted}
 \usepackage{graphicx}
 \usepackage{tikz}
+\usepackage{tikz-3dplot}
+
 \usepackage{listofitems} % for \readlist to create arrays
 
 \usepackage{xurl}
