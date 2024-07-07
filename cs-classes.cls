@@ -301,6 +301,6 @@
     \pgfmathsetmacro{\cubez}{#4}
 
     \draw[fill=#8, thick] #1 -- ++ (-\cubex,0,0) -- node[left, pos=.5] {#6} ++ (0,-\cubey,0) -- node[below, pos=.5] {#5} ++(\cubex,0,0) --  cycle;
-    \draw[fill=#8!gray!80, thick] #1 -- ++(0,0,-\cubez) -- ++(0,-\cubey,0) -- node[right, pos=.5] {#7} ++(0,0,\cubez) -- cycle;
+    \draw[fill=#8!gray!80, thick] #1 -- ++(0,0,-\cubez) -- ++(0,-\cubey,0) -- node[right=2, pos=.5] {#7} ++(0,0,\cubez) -- cycle;
     \draw[fill=#8, thick] #1 -- ++(-\cubex,0,0) -- ++(0,0,-\cubez) -- ++(\cubex,0,0) -- cycle;
 }
