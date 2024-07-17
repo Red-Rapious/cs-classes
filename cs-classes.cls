@@ -69,6 +69,7 @@
 \usepackage{parskip} % space between paragraphs
 
 \usepackage{chngcntr} % figure counter within section
+\usepackage[dvipsnames]{xcolor}
 
 \usepackage{hyperref}
 \hypersetup{
