@@ -63,7 +63,7 @@
 \usepackage{booktabs} % for improved tabular lines
 \usepackage{array} % for options in tabular columns types
 \usepackage{ebproof} % for proof trees
-\usepackage{caption} % to center captions
+\usepackage[justification=centering]{caption} % to center captions
 \usepackage{titling}
 
 \usepackage{parskip} % space between paragraphs
