@@ -199,23 +199,24 @@
 
 %%% Usefull new commands
 % Special maths letters
-\newcommand{\N}{\mathbb{N}} % Natural numbers
-\newcommand{\Zc}{\mathcal{Z}} % Some set
-\newcommand{\Z}{\mathbb{Z}} % Relative numbers
-\newcommand{\Q}{\mathbb{Q}} % Rationnal numbers
-\newcommand{\R}{\mathbb{R}} % Real numbers
-\newcommand{\C}{\mathbb{C}} % Complex numbers
 \newcommand{\A}{\mathcal{A}} % Automata
 \newcommand{\Ab}{\mathbb{A}} % Semantic arrays set
+\newcommand{\B}{\mathbb{B}} % Boolean set
+\newcommand{\C}{\mathbb{C}} % Complex numbers
 \newcommand{\Ec}{\mathcal{E}} % Semantic expressions
-\renewcommand{\L}{\mathcal{L}} % Loss function
-\newcommand{\Pc}{\mathcal{P}} % Parts of a set
-\renewcommand{\S}{\mathcal{S}} % Semantic
-\newcommand{\X}{\mathcal{X}} % Input set
+\newcommand{\F}{\mathcal{F}} % Function set
 \newcommand{\I}{\mathbb{I}} % Semantic integers
+\renewcommand{\L}{\mathcal{L}} % Loss function
+\newcommand{\N}{\mathbb{N}} % Natural numbers
+\newcommand{\Pc}{\mathcal{P}} % Parts of a set
+\newcommand{\Q}{\mathbb{Q}} % Rationnal numbers
+\newcommand{\R}{\mathbb{R}} % Real numbers
+\renewcommand{\S}{\mathcal{S}} % Semantic
 \newcommand{\T}{\mathcal{T}}
+\newcommand{\X}{\mathcal{X}} % Input set
 \newcommand{\Y}{\mathcal{Y}} % Output set
-\newcommand{\F}{\mathcal{F}}
+\newcommand{\Z}{\mathbb{Z}} % Relative numbers
+\newcommand{\Zc}{\mathcal{Z}} % Some set
 
 % Probability
 \newcommand{\E}{\mathbb{E}} % expectation
