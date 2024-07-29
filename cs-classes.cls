@@ -37,10 +37,10 @@
 \usepackage{amssymb}
 \usepackage{amsthm}
 \usepackage{mathrsfs}
-\usepackage{enumitem}  
-\usepackage{calc}
+\usepackage{enumitem}
+\usepackage{calc} % counters
 \usepackage{dsfont} % mostly for \mathds{1}
-\usepackage{stmaryrd}
+\usepackage{stmaryrd} % llbracket, rrbracket
 
 \usepackage{mathtools}
 \usepackage{wrapfig}
@@ -50,7 +50,7 @@
     style=numeric
 ]{biblatex}
 
-\usepackage{minted}
+\usepackage{minted} % for code blocks
 \usepackage{graphicx}
 \usepackage{tikz}
 \usepackage{tikz-3dplot} % for 3d plots
@@ -152,7 +152,11 @@
 
 \renewcommand{\footnoterule}{\vfill\kern 4pt \hrule width 0.4\columnwidth \kern 2.6pt}
 
+% Change footnote symbols to arabic
 \let\@fnsymbol\@arabic
+
+% Support for mathbb-like digits
+\DeclareMathAlphabet{\digitsbb}{U}{bbold}{m}{n}
 
 %%% Change classical symbols
 \let\temp\phi
