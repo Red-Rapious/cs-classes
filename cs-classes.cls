@@ -11,6 +11,9 @@
 \newif\if@titlepaged
 \DeclareOption{titlepaged}{\@titlepagedtrue}
 
+\newif\if@twocolumn
+\DeclareOption{twocolumn}{\@twocolumntrue}
+
 \ProcessOptions\relax
 
 \if@french
@@ -20,8 +23,13 @@
 \fi
 
 %%% Packages
+\if@twocolumn
+\LoadClass[11pt,a4paper,twocolumn]{article}
+\usepackage[a4paper,margin=1.5cm]{geometry}
+\else
 \LoadClass[12pt,a4paper]{article}
 \usepackage[a4paper,margin=2cm]{geometry}
+\fi
 
 \usepackage{cmap}
 \usepackage[T1]{fontenc} % for French
@@ -137,7 +145,7 @@
     \end{titlepage}
 }
 \else
-\AfterEndPreamble{\maketitle}
+\if@twocolumn\else\AfterEndPreamble{\maketitle}\fi
 \setlength{\droptitle}{-5ex}
 \pretitle{\begin{center}\LARGE\bfseries}
 \fi
@@ -150,7 +158,7 @@
 
 \numberwithin{equation}{subsection}
 
-\renewcommand{\footnoterule}{\vfill\kern 4pt \hrule width 0.4\columnwidth \kern 2.6pt}
+\if@twocolumn\else\renewcommand{\footnoterule}{\vfill\kern 4pt \hrule width 0.4\columnwidth \kern 2.6pt}\fi
 
 % Change footnote symbols to arabic
 \let\@fnsymbol\@arabic
