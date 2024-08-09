@@ -99,6 +99,8 @@
 \counterwithin{figure}{section}
 \captionsetup[figure]{hypcap=false}
 
+\graphicspath{{../cs-classes}}
+
 \if@titlepaged
 \AfterEndPreamble{
     \begin{titlepage}
