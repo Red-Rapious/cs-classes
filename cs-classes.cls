@@ -100,6 +100,8 @@
 \counterwithin{figure}{section}
 \captionsetup[figure]{hypcap=false}
 
+\graphicspath{{../cs-classes}}
+
 \if@titlepaged
 \AfterEndPreamble{
     \begin{titlepage}
@@ -220,6 +222,7 @@
 \newcommand{\Pc}{\mathcal{P}} % Parts of a set
 \newcommand{\Q}{\mathbb{Q}} % Rationnal numbers
 \newcommand{\R}{\mathbb{R}} % Real numbers
+\newcommand{\Rc}{\mathcal{R}}
 \renewcommand{\S}{\mathcal{S}} % Semantic
 \newcommand{\T}{\mathcal{T}}
 \newcommand{\X}{\mathcal{X}} % Input set
