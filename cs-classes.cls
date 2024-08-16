@@ -245,7 +245,7 @@
 \DeclarePairedDelimiter{\norm}{\lVert}{\rVert}
 \DeclareMathOperator*{\KL}{KL} % Kullback-Leibler divergence
 \DeclareMathOperator*{\ReLU}{ReLU}
-\DeclareMathOperator*{\softmax}{softmax}
+\DeclareMathOperator{\softmax}{softmax}
 
 % Linear Algebra
 \DeclareMathOperator*{\im}{Im} % image
