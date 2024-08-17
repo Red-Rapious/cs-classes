@@ -100,7 +100,7 @@
 \counterwithin{figure}{section}
 \captionsetup[figure]{hypcap=false}
 
-\graphicspath{{../cs-classes}}
+\graphicspath{{../cs-classes}, {images}}
 
 \if@titlepaged
 \AfterEndPreamble{
