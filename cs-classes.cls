@@ -219,6 +219,7 @@
 \newcommand{\I}{\mathbb{I}} % Semantic integers
 \renewcommand{\L}{\mathcal{L}} % Loss function
 \newcommand{\N}{\mathbb{N}} % Natural numbers
+\newcommand{\Nc}{\mathcal{N}} % Normal distribution
 \newcommand{\Pc}{\mathcal{P}} % Parts of a set
 \newcommand{\Q}{\mathbb{Q}} % Rationnal numbers
 \newcommand{\R}{\mathbb{R}} % Real numbers
@@ -243,16 +244,16 @@
 \newcommand{\hatf}{\hat{f}}
 \newcommand{\htheta}{\hat{\theta}}
 \DeclarePairedDelimiter{\norm}{\lVert}{\rVert}
-\DeclareMathOperator*{\KL}{KL} % Kullback-Leibler divergence
-\DeclareMathOperator*{\ReLU}{ReLU}
+\DeclareMathOperator{\KL}{KL} % Kullback-Leibler divergence
+\DeclareMathOperator{\ReLU}{ReLU}
 \DeclareMathOperator{\softmax}{softmax}
 
 % Linear Algebra
-\DeclareMathOperator*{\im}{Im} % image
-\DeclareMathOperator*{\rg}{rg} % rank
-\DeclareMathOperator*{\Tr}{Tr} % trace
+\DeclareMathOperator{\im}{Im} % image
+\DeclareMathOperator{\rg}{rg} % rank
+\DeclareMathOperator{\Tr}{Tr} % trace
 \newcommand{\tp}{\top} % Transpose
-\DeclareMathOperator*{\diag}{diag} % diagonal matrix
+\DeclareMathOperator{\diag}{diag} % diagonal matrix
 
 \DeclareMathOperator*{\Conv}{Conv} % Convex Hull
 \DeclareMathOperator*{\Span}{Span} % Convex Hull
