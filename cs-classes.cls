@@ -214,6 +214,7 @@
 \newcommand{\Ab}{\mathbb{A}} % Semantic arrays set
 \newcommand{\B}{\mathbb{B}} % Boolean set
 \newcommand{\C}{\mathbb{C}} % Complex numbers
+\newcommand{\D}{\mathcal{D}} % Distribution
 \newcommand{\Ec}{\mathcal{E}} % Semantic expressions
 \newcommand{\F}{\mathcal{F}} % Function set
 \newcommand{\I}{\mathbb{I}} % Semantic integers
