@@ -245,7 +245,7 @@
 \newcommand{\hatf}{\hat{f}}
 \newcommand{\htheta}{\hat{\theta}}
 \DeclarePairedDelimiter{\norm}{\lVert}{\rVert}
-\DeclareMathOperator{\KL}{KL} % Kullback-Leibler divergence
+\newcommand{\KL}{D_{\mathrm{KL}}} % Kullback-Leibler divergence
 \DeclareMathOperator{\ReLU}{ReLU}
 \DeclareMathOperator{\softmax}{softmax}
 
