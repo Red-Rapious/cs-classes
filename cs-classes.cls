@@ -248,6 +248,7 @@
 \newcommand{\KL}{D_{\mathrm{KL}}} % Kullback-Leibler divergence
 \DeclareMathOperator{\ReLU}{ReLU}
 \DeclareMathOperator{\softmax}{softmax}
+\DeclareMathOperator{\JSD}{JSD} % Jensen-Shannon divergence
 
 % Linear Algebra
 \DeclareMathOperator{\im}{Im} % image
