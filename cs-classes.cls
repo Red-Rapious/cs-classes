@@ -226,6 +226,7 @@
 \newcommand{\R}{\mathbb{R}} % Real numbers
 \newcommand{\Rc}{\mathcal{R}}
 \renewcommand{\S}{\mathcal{S}} % Semantic
+\newcommand{\Sb}{\mathbb{S}} % Symmetric matrices
 \newcommand{\T}{\mathcal{T}}
 \newcommand{\X}{\mathcal{X}} % Input set
 \newcommand{\Y}{\mathcal{Y}} % Output set
