@@ -260,6 +260,8 @@
 
 \DeclareMathOperator*{\Conv}{Conv} % Convex Hull
 \DeclareMathOperator*{\Span}{Span} % Convex Hull
+\DeclareMathOperator*{\dom}{dom} % Effective domain
+\DeclareMathOperator*{\epi}{epi} % Epigraph
 
 % Semantics
 \DeclarePairedDelimiter{\sem}{\llbracket}{\rrbracket}
