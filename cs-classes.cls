@@ -263,6 +263,9 @@
 \DeclareMathOperator*{\dom}{dom} % Effective domain
 \DeclareMathOperator*{\epi}{epi} % Epigraph
 
+% Topology
+\DeclareMathOperator{\interior}{int} % Interior
+
 % Semantics
 \DeclarePairedDelimiter{\sem}{\llbracket}{\rrbracket}
 \newcommand{\until}{\mathfrak{U}}
