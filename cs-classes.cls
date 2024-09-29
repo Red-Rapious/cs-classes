@@ -263,6 +263,8 @@
 \DeclareMathOperator*{\dom}{dom} % Effective domain
 \DeclareMathOperator*{\epi}{epi} % Epigraph
 
+\DeclareMathOperator*{\SO}{SO} % Special Orthogonal group
+
 % Topology
 \DeclareMathOperator{\interior}{int} % Interior
 
