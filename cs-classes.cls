@@ -264,6 +264,7 @@
 \DeclareMathOperator*{\epi}{epi} % Epigraph
 
 \DeclareMathOperator*{\SO}{SO} % Special Orthogonal group
+\DeclareMathOperator*{\so}{so}
 
 % Topology
 \DeclareMathOperator{\interior}{int} % Interior
@@ -278,6 +279,7 @@
 \DeclareMathOperator*{\argmax}{arg\,max}
 \newcommand{\dd}{\,\textnormal{d}} % Derivative d
 \DeclarePairedDelimiter{\openseg}{\rbrack}{\lbrack} % Open segment ]a, b[
+\DeclareMathOperator*{\atantwo}{atan2}
 
 %%% Custom commands
 \newcommand*{\set}[2]{\left\{\,#1 \: \middle| \: #2\,\right\}} % Set of the form { x | y }
