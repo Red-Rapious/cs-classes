@@ -218,6 +218,7 @@
 \newcommand{\D}{\mathcal{D}} % Distribution
 \newcommand{\Ec}{\mathcal{E}} % Semantic expressions
 \newcommand{\F}{\mathcal{F}} % Function set
+\newcommand{\G}{\mathcal{G}} % Graph
 \newcommand{\I}{\mathbb{I}} % Semantic integers
 \renewcommand{\L}{\mathcal{L}} % Loss function
 \newcommand{\N}{\mathbb{N}} % Natural numbers
