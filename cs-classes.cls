@@ -264,6 +264,7 @@
 \DeclareMathOperator*{\Span}{Span} % Convex Hull
 \DeclareMathOperator*{\dom}{dom} % Effective domain
 \DeclareMathOperator*{\epi}{epi} % Epigraph
+\DeclareMathOperator*{\dist}{dist} % Epigraph
 
 \DeclareMathOperator*{\SO}{SO} % Special Orthogonal group
 \DeclareMathOperator*{\so}{so}
