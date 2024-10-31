@@ -255,6 +255,7 @@
 
 % Linear Algebra
 \DeclareMathOperator{\im}{Im} % image
+\DeclareMathOperator{\Ker}{Ker} % kernel
 \DeclareMathOperator{\rg}{rg} % rank
 \DeclareMathOperator{\Tr}{Tr} % trace
 \newcommand{\tp}{\top} % Transpose
