@@ -269,6 +269,8 @@
 
 \DeclareMathOperator*{\SO}{SO} % Special Orthogonal group
 \DeclareMathOperator*{\so}{so}
+\DeclareMathOperator*{\SE}{SE} % Special Euclidian group
+\DeclareMathOperator*{\se}{se} % Special Euclidian group
 
 % Topology
 \DeclareMathOperator{\interior}{int} % Interior
