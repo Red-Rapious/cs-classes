@@ -216,6 +216,7 @@
 \newcommand{\C}{\mathbb{C}} % Complex numbers
 \newcommand{\Cc}{\mathcal{C}} % Configuration space
 \newcommand{\D}{\mathcal{D}} % Distribution
+\newcommand{\Ds}{\mathscr{D}}
 \newcommand{\Ec}{\mathcal{E}} % Semantic expressions
 \newcommand{\F}{\mathcal{F}} % Function set
 \newcommand{\G}{\mathcal{G}} % Graph
