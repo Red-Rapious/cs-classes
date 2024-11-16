@@ -49,6 +49,7 @@
 \usepackage{calc} % counters
 \usepackage{dsfont} % mostly for \mathds{1}
 \usepackage{stmaryrd} % llbracket, rrbracket
+\usepackage{cancel}
 
 \usepackage{mathtools}
 \usepackage{wrapfig}
@@ -307,6 +308,10 @@
 
 % ∂f/∂x
 \newcommand*{\partfrac}[2]{\frac{\partial#1}{\partial#2}}
+
+% Strikeout in math mode
+\newcommand\hcancel[2][black]{\setbox0=\hbox{$#2$}%
+\rlap{\raisebox{.35\ht0}{\textcolor{#1}{\rule{\wd0}{1.5pt}}}}#2} 
 
 %%% Custom environments
 % Grammar in math mode
