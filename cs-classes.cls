@@ -276,6 +276,7 @@
 
 % Topology
 \DeclareMathOperator{\interior}{int} % Interior
+\DeclareMathOperator{\relint}{relint} % Relative interior
 
 % Semantics
 \DeclarePairedDelimiter{\sem}{\llbracket}{\rrbracket}
