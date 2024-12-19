@@ -291,6 +291,7 @@
 \DeclareMathOperator*{\atantwo}{atan2}
 \DeclareMathOperator*{\minimize}{minimize\:}
 \DeclareMathOperator*{\maximize}{maximize\:}
+\DeclareMathOperator*{\sign}{sign}
 
 %%% Custom commands
 \newcommand*{\set}[2]{\left\{\,#1 \: \middle| \: #2\,\right\}} % Set of the form { x | y }
