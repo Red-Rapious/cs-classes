@@ -14,6 +14,9 @@
 \newif\if@twocolumn
 \DeclareOption{twocolumn}{\@twocolumntrue}
 
+\newif\if@nodate
+\DeclareOption{nodate}{\@nodatetrue}
+
 \ProcessOptions\relax
 
 \if@french
@@ -156,6 +159,11 @@
 
 \if@toc
 \AfterEndPreamble{\tableofcontents\newpage}
+\else
+\fi
+
+\if@nodate
+\date{\vspace*{-1cm}}
 \else
 \fi
 
