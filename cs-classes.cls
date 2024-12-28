@@ -249,7 +249,7 @@
 \newcommand{\exrisk}{\mathscr{R}} % excess risk
 \newcommand{\hatf}{\hat{f}}
 \newcommand{\htheta}{\hat{\theta}}
-\DeclarePairedDelimiter{\norm}{\lVert}{\rVert}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
 \newcommand{\KL}{D_{\mathrm{KL}}} % Kullback-Leibler divergence
 \DeclareMathOperator{\ReLU}{ReLU}
 \DeclareMathOperator{\softmax}{softmax}
