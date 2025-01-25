@@ -268,6 +268,7 @@
 \DeclareMathOperator{\im}{Im} % image
 \DeclareMathOperator{\Ker}{Ker} % kernel
 \DeclareMathOperator{\rg}{rg} % rank
+\DeclareMathOperator{\rank}{rank} % rank
 \DeclareMathOperator{\Tr}{Tr} % trace
 \newcommand{\tp}{\top} % Transpose
 \DeclareMathOperator{\diag}{diag} % diagonal matrix
