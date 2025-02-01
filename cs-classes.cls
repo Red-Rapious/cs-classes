@@ -306,7 +306,7 @@
 
 %%% Custom commands
 \newcommand*{\set}[2]{\left\{\,#1 \: \middle| \: #2\,\right\}} % Set of the form { x | y }
-\newcommand*{\inner}[2]{\left\langle#1 \, \middle| \, #2\right\rangle} % Set of the form { x | y }
+\newcommand*{\inner}[2]{\left\langle#1 \, \middle| \, #2\right\rangle} % Inner product <·|·>
 \newcommand*{\iset}[2]{\sem{#1, #2}} % Integer set with double bars
 \newcommand*{\roundsem}[1]{\llparenthesis #1 \rrparenthesis}
 \newcommand*{\ind}{\mathds{1}} % Indicator
