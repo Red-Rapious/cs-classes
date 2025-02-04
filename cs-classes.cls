@@ -168,7 +168,7 @@
 \fi
 
 
-\numberwithin{equation}{subsection}
+% \numberwithin{equation}{subsection}
 
 \if@twocolumn\else\renewcommand{\footnoterule}{\vfill\kern 4pt \hrule width 0.4\columnwidth \kern 2.6pt}\fi
 
@@ -296,7 +296,7 @@
 % Misc.
 \DeclareMathOperator*{\argmin}{arg\,min}
 \DeclareMathOperator*{\argmax}{arg\,max}
-\newcommand{\dd}{\,\textnormal{d}} % Derivative d
+\newcommand{\dd}{\,\mathrm{d}} % Derivative d
 \DeclarePairedDelimiter{\openseg}{\rbrack}{\lbrack} % Open segment ]a, b[
 \DeclareMathOperator*{\atantwo}{atan2}
 \DeclareMathOperator*{\minimize}{minimize\:}
