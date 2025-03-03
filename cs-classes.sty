@@ -85,34 +85,41 @@
 
 % Semantics
 \DeclarePairedDelimiter{\sem}{\llbracket}{\rrbracket}
+\newcommand*{\roundsem}[1]{\llparenthesis #1 \rrparenthesis}
 \newcommand{\until}{\mathfrak{U}}
 \newcommand*{\trace}[1]{\langle #1 \rangle}
+\newcommand*{\hoare}[3]{\left\{#1\right\} \; #2 \; \left\{#3\right\}} % Hoare triple
+\newcommand*{\sqhoare}[3]{\left[#1\right] \; #2 \; \left[#3\right]} % Square Hoare triple
 
-% Misc.
+% Misc. maths
 \DeclareMathOperator*{\argmin}{arg\,min}
 \DeclareMathOperator*{\argmax}{arg\,max}
-\newcommand{\dd}{\,\mathrm{d}} % Derivative d
+\newcommand{\dd}{\,\mathrm{d}} % derivative d
 \DeclarePairedDelimiter{\openseg}{\rbrack}{\lbrack} % Open segment ]a, b[
 \DeclareMathOperator*{\atantwo}{atan2}
 \DeclareMathOperator*{\minimize}{minimize\:}
 \DeclareMathOperator*{\maximize}{maximize\:}
-\newcommand*{\subj}{\quad\text{subject to}\quad}
-\DeclareMathOperator*{\sign}{sign}
-
-% Other
 \newcommand*{\set}[2]{\left\{\,#1 \: \middle| \: #2\,\right\}} % Set of the form { x | y }
 \newcommand*{\inner}[2]{\left\langle#1 \, \middle| \, #2\right\rangle} % Inner product <·|·>
-\newcommand*{\iset}[2]{\sem{#1, #2}} % Integer set with double bars
-\newcommand*{\roundsem}[1]{\llparenthesis #1 \rrparenthesis}
 \newcommand*{\ind}{\mathds{1}} % Indicator
+\newcommand*{\iset}[2]{\sem{#1, #2}} % Integer set with double bars
+\newcommand*{\partfrac}[2]{\frac{\partial#1}{\partial#2}} % ∂f/∂x
+\DeclareMathOperator*{\sign}{sign}
+
+% Text in math mode
+\newcommand*{\subj}{\quad\text{subject to}\quad}
+\newcommand*{\st}{\quad\mathrm{s.t.}\quad}
+\newcommand*{\where}{\quad\textnormal{where}\quad}
+
+% Other
 \newcommand*{\false}{\textnormal{false}}
 \newcommand*{\true}{\textnormal{true}}
-\newcommand*{\hoare}[3]{\left\{#1\right\} \; #2 \; \left\{#3\right\}} % Hoare triple
-\newcommand*{\sqhoare}[3]{\left[#1\right] \; #2 \; \left[#3\right]} % Square Hoare triple
 \newcommand*{\mathpdf}[1]{\texorpdfstring{$#1$}{#1}} % Used to add math in title without causing a PDF error
-\newcommand*{\where}{\quad\textnormal{where}\quad}
-\newcommand*{\partfrac}[2]{\frac{\partial#1}{\partial#2}} % ∂f/∂x
-\newcommand\hcancel[2][black]{\setbox0=\hbox{$#2$} % Strikeout in math mode
+\newcommand{\red}{\color{red}}
+
+
+% Strikeout in math mode
+\newcommand\hcancel[2][black]{\setbox0=\hbox{$#2$} 
 \rlap{\raisebox{.35\ht0}{\textcolor{#1}{\rule{\wd0}{1.5pt}}}}#2} 
 
 
